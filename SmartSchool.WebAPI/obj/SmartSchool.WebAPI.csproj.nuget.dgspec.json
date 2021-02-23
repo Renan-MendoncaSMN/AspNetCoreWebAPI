@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\work-space\\ws-netCore\\SmartShoolProject\\SmartSchool.WebAPI\\SmartSchool.WebAPI.csproj": {}
+    "C:\\work-space\\ws-netCore\\SmartShoolProject\\SmartSchool.WebAPI\\SmartSchool.WebAPI.csproj": {}
   },
   "projects": {
-    "c:\\work-space\\ws-netCore\\SmartShoolProject\\SmartSchool.WebAPI\\SmartSchool.WebAPI.csproj": {
+    "C:\\work-space\\ws-netCore\\SmartShoolProject\\SmartSchool.WebAPI\\SmartSchool.WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\work-space\\ws-netCore\\SmartShoolProject\\SmartSchool.WebAPI\\SmartSchool.WebAPI.csproj",
+        "projectUniqueName": "C:\\work-space\\ws-netCore\\SmartShoolProject\\SmartSchool.WebAPI\\SmartSchool.WebAPI.csproj",
         "projectName": "SmartSchool.WebAPI",
-        "projectPath": "c:\\work-space\\ws-netCore\\SmartShoolProject\\SmartSchool.WebAPI\\SmartSchool.WebAPI.csproj",
+        "projectPath": "C:\\work-space\\ws-netCore\\SmartShoolProject\\SmartSchool.WebAPI\\SmartSchool.WebAPI.csproj",
         "packagesPath": "C:\\Users\\unip03\\.nuget\\packages\\",
-        "outputPath": "c:\\work-space\\ws-netCore\\SmartShoolProject\\SmartSchool.WebAPI\\obj\\",
+        "outputPath": "C:\\work-space\\ws-netCore\\SmartShoolProject\\SmartSchool.WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\unip03\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -50,15 +50,11 @@
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[5.0.3, )"
+              "version": "[3.1.0, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[3.1.0, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[5.6.3, )"
             }
           },
           "imports": [
