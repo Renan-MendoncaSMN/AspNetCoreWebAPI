@@ -54,3 +54,11 @@ C:\work-space\ws-netCore\SmartShoolProject\SmartSchool.WebAPI\bin\Debug\net5.0\N
 C:\work-space\ws-netCore\SmartShoolProject\SmartSchool.WebAPI\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
 C:\work-space\ws-netCore\SmartShoolProject\SmartSchool.WebAPI\bin\Debug\net5.0\AutoMapper.dll
 C:\work-space\ws-netCore\SmartShoolProject\SmartSchool.WebAPI\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\work-space\ws-netCore\SmartShoolProject\SmartSchool.WebAPI\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\work-space\ws-netCore\SmartShoolProject\SmartSchool.WebAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\work-space\ws-netCore\SmartShoolProject\SmartSchool.WebAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\work-space\ws-netCore\SmartShoolProject\SmartSchool.WebAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\work-space\ws-netCore\SmartShoolProject\SmartSchool.WebAPI\obj\Debug\net5.0\SmartSchool.WebAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\work-space\ws-netCore\SmartShoolProject\SmartSchool.WebAPI\bin\Debug\net5.0\SmartSchool.WebAPI.xml
+C:\work-space\ws-netCore\SmartShoolProject\SmartSchool.WebAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+C:\work-space\ws-netCore\SmartShoolProject\SmartSchool.WebAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll

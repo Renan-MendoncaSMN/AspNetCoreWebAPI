@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SmartSchool.WebAPI</name>
+    </assembly>
+    <members>
+        <member name="T:SmartSchool.WebAPI.V1.Controllers.AlunoController">
+            <sumary>
+            Versão 1 do sistema
+            </sumary>
+        </member>
+        <member name="M:SmartSchool.WebAPI.V1.Controllers.AlunoController.#ctor(SmartSchool.WebAPI.Data.IRepository,AutoMapper.IMapper)">
+             <sumary>
+            
+             </sumary>
+             <param name="repo"></param>
+             <param name="mapper"></param>
+        </member>
+        <member name="M:SmartSchool.WebAPI.V1.Controllers.AlunoController.Get">
+            <sumary>
+            Método responsavel para retornar todos os meus alunos.
+            </sumary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.WebAPI.V1.Controllers.AlunoController.GetById(System.Int32)">
+            <sumary>
+            Método responsavel por retornar apenas um aluno por id.
+            </sumary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartSchool.WebAPI.V1.Controllers.ProfessorController">
+            <sumary>
+            Versão 1 do sistema
+            </sumary>
+        </member>
+        <member name="T:SmartSchool.WebAPI.V2.Controllers.AlunoController">
+             <sumary>
+            Versão 2 do sistema
+             </sumary>
+        </member>
+        <member name="M:SmartSchool.WebAPI.V2.Controllers.AlunoController.#ctor(SmartSchool.WebAPI.Data.IRepository,AutoMapper.IMapper)">
+             <sumary>
+            
+             </sumary>
+             <param name="repo"></param>
+             <param name="mapper"></param>
+        </member>
+        <member name="M:SmartSchool.WebAPI.V2.Controllers.AlunoController.Get">
+            <sumary>
+            Método responsavel para retornar todos os meus alunos.
+            </sumary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
