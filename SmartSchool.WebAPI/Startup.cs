@@ -28,7 +28,7 @@ namespace SmartSchool.WebAPI
         {
             //referencia do servico da minha SmartContext
             services.AddDbContext<SmartContext>(
-                context => context.UseSqlite(Configuration.GetConnectionString("Default"))
+                context => context.UseMySql(Configuration.GetConnectionString("MySqlConnection"))
             );
 
             services.AddControllers()
