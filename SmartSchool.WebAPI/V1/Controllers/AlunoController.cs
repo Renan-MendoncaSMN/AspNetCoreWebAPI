@@ -61,8 +61,15 @@ namespace SmartSchool.WebAPI.V1.Controllers
             var aluno = _repo.GetAlunoByID(id, false);
             if (aluno == null) return BadRequest("O aluno não foi encontrado");
 
-            var alunoDto = _mapper.Map<AlunoDto>(aluno);
+            var alunoDto = _mapper.Map<AlunoRegistrarDto>(aluno);
             return Ok(alunoDto);
+        }
+
+        [HttpGet("ByDisciplina/{id}")]
+        public async Task<IActionResult> GetByDisciplinaId(int id)
+        {
+            var result = await _repo.GetAllAlunosByDisciplinaIdAsync(id, false);
+            return Ok(result);
         }
 
         /*api/aluno/byName?nome=nome&sobrenome=sobrenome
@@ -104,7 +111,7 @@ namespace SmartSchool.WebAPI.V1.Controllers
         }
 
         [HttpPatch("{id}")]
-        public IActionResult Patch(int id, AlunoRegistrarDto model)
+        public IActionResult Patch(int id, AlunoPatchDto model)
         {
             var aluno = _repo.GetAlunoByID(id);
             if (aluno == null) return BadRequest("Aluno não encontrado!");
@@ -114,10 +121,29 @@ namespace SmartSchool.WebAPI.V1.Controllers
             _repo.Update(aluno);
             if (_repo.SaveChanges())
             {
-                return Created($"/api/aluno/{model.Id}", _mapper.Map<AlunoDto>(aluno));
+                return Created($"/api/aluno/{model.Id}", _mapper.Map<AlunoPatchDto>(aluno));
             }
             return BadRequest("Aluno não atualizado");
         }
+
+        // api/aluno/{id}/trocarEstado
+        [HttpPatch("{id}/trocarEstado")]
+        public IActionResult trocarEstado(int id, TrocaEstadoDto trocaEstado)
+        {
+            var aluno = _repo.GetAlunoByID(id);
+            if (aluno == null) return BadRequest("Aluno não encontrado!");
+
+            aluno.Ativo = trocaEstado.Estado;
+
+            _repo.Update(aluno);
+            if (_repo.SaveChanges())
+            {
+                var msn = aluno.Ativo ? "ativado" : "desativado";
+                return Ok(new { message = $"Aluno {msn} com sucesso!"});
+            }
+            return BadRequest("Erro ao atualizar");
+        }
+
 
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)

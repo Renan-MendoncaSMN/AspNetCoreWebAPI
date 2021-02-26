@@ -37,12 +37,22 @@ namespace SmartSchool.WebAPI.V1.Controllers
         public IActionResult GetById(int id)
         {
 
-            var professor = _repo.GetProfessorByID(id, false);
+            var professor = _repo.GetProfessorById(id, true);
             if (professor == null) return BadRequest("Professor não foi encontrado");
 
             var professorDto = _mapper.Map<ProfessorDto>(professor);
             return Ok(professorDto);
         }
+
+         [HttpGet("byaluno/{alunoId}")]
+        public IActionResult GetByAlunoId(int alunoId)
+        {
+            var Professores = _repo.GetProfessoresByAlunoId(alunoId, true);
+            if (Professores == null) return BadRequest("Professores não encontrados");
+            
+            return Ok(_mapper.Map<IEnumerable<ProfessorDto>>(Professores));
+        }
+
 
         /*[HttpGet("ByName/{nome}")]
         public IActionResult GetByName(string nome)
@@ -68,7 +78,7 @@ namespace SmartSchool.WebAPI.V1.Controllers
         [HttpPut("{id}")]
         public IActionResult Put(int id, ProfessorRegistrarDto model)
         {
-            var professor = _repo.GetProfessorByID(id, false);
+            var professor = _repo.GetProfessorById(id, false);
             if(professor == null) return BadRequest("Professor não encontrado!");
 
             _mapper.Map(model, professor);
@@ -84,7 +94,7 @@ namespace SmartSchool.WebAPI.V1.Controllers
         [HttpPatch("{id}")]
         public IActionResult Patch(int id, ProfessorRegistrarDto model)
         {
-            var professor = _repo.GetProfessorByID(id, false);
+            var professor = _repo.GetProfessorById(id, false);
             if(professor == null) return BadRequest("Professor não encontrado!");
 
             _mapper.Map(model, professor);
@@ -100,7 +110,7 @@ namespace SmartSchool.WebAPI.V1.Controllers
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            var professor = _repo.GetProfessorByID(id, false);
+            var professor = _repo.GetProfessorById(id, false);
             if(professor == null) return BadRequest("Professor não encontrado!");
 
             _repo.Delete(professor);
